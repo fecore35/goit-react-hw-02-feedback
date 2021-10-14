@@ -13,7 +13,6 @@ class App extends Component {
 
   handlerStatistics = (e) => {
     const { feedback } = e.currentTarget.dataset;
-    console.log(feedback);
 
     this.setState((prevState) => ({
       [feedback]: prevState[feedback] + 1,
