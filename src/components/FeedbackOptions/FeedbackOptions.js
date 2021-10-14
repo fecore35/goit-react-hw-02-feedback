@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
+import s from "./FeedbackOptions.module.css";
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
-    <div className="flex">
+    <div className={s.flex}>
       {options.map((btn) => {
         return (
           <button
             key={btn}
+            className={s.button}
             type="button"
             data-feedback={btn}
             onClick={onLeaveFeedback}
